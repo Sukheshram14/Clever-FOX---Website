@@ -260,17 +260,15 @@ center h1{
   
   .card .back{
   transform: perspective(600px) rotateY(180deg);
- /* background:linear-gradient(135deg, #4f0286, #01018b);
-  background:linear-gradient(135deg, #00ff00, #ff00ff);
-  background: linear-gradient(135deg, #00ff00, #ff00ff, #00ff00); */
   background: linear-gradient(135deg, #ff00cc, #00ffcc);
-  padding: 15px;
+  padding: 1px;
   color: whitesmoke;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
   box-sizing: 0 5px 10px black;
+   width:100%;
   }
   
   .card .back .link{
