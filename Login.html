@@ -1,0 +1,54 @@
+  
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="WhatsApp_Image_2024-03-29_at_10.21.57_9536c505-removebg-preview.png">
+    <link rel="stylesheet" href="Login.css">
+    <link rel="icon" type="image/x-icon" href="WhatsApp_Image_2024-03-29_at_10.21.57_9536c505-removebg-preview.png">
+    
+</head>
+<body> 
+    <div class="box">
+        <form action="juar2.html"> 
+            <h2> Login</h2>
+            <div class="inputbox">
+                <input type="text" required="required" id="User">
+              <span>Username</span>
+              <i></i>
+            </div>
+        
+           <div class="inputbox">
+                <input type="password" required="required" id="pass">
+                 <span>Password</span>
+                <i></i>
+               </div>
+
+               <div class="links">
+                <a href="#"> Forgot password</a>
+                <a href="#"> New user</a>
+               </div>
+               <input type="submit" value="Log in" onclick="auth();"/>
+            
+        </form>
+    </div>
+    <script> 
+    function auth()
+    {
+        var Username = document.getElementById("User").value;
+        var password = document.getElementById("pass").value;
+        if( Username == "username" && password == "123456")
+        {
+            alert("login successful");
+           
+        }
+        else{
+            alert("invalid username or password");
+            return
+        }
+    }
+    </script>
+</body>
+</html>
