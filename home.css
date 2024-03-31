@@ -92,7 +92,7 @@ display: none;
   top: 0;
   right: -100%;
   z-index: 10;
-  width: 300px;
+  width: 350px;
 
   background-color:transparent;
   backdrop-filter: blur(40px);
