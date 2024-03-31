@@ -349,13 +349,14 @@ transition: background-color 0.3s ease;
 .card .back{
 transform: perspective(600px) rotateY(180deg);
 background: rgba(3,35,54);
-padding: 15px;
+padding: 1px;
 color: whitesmoke;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
 text-align: center;
 box-sizing: 0 5px 10px black;
+ width:100%;
 }
 
 .card .back .link{
