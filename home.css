@@ -348,7 +348,7 @@ transition: background-color 0.3s ease;
 
 .card .back{
 transform: perspective(600px) rotateY(180deg);
-background: rgba(3,35,54);
+background: linear-gradient(135deg, #ff00cc, #00ffcc);
 padding: 1px;
 color: whitesmoke;
 display: flex;
