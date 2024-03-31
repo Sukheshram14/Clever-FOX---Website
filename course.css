@@ -261,7 +261,7 @@ center h1{
   .card .back{
   transform: perspective(600px) rotateY(180deg);
   background: linear-gradient(135deg, #ff00cc, #00ffcc);
-  padding: 1px;
+  padding: 8px;
   color: whitesmoke;
   display: flex;
   flex-direction: column;
