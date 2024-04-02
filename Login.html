@@ -1,4 +1,3 @@
-  
 <!DOCTYPE html> 
 <html lang="en">
 <head>
@@ -12,8 +11,8 @@
 </head>
 <body> 
     <div class="box">
-        <form action="juar2.html"> 
-            <h2> Login</h2>
+        <form id="loginForm" action="index.html"> 
+            <h2>Login</h2>
             <div class="inputbox">
                 <input type="text" required="required" id="User">
               <span>Username</span>
@@ -30,25 +29,22 @@
                 <a href="#"> Forgot password</a>
                 <a href="#"> New user</a>
                </div>
-               <input type="submit" value="Log in" onclick="auth();"/>
+               <input type="submit" value="Log in"/>
             
         </form>
     </div>
     <script> 
-    function auth()
-    {
-        var Username = document.getElementById("User").value;
-        var password = document.getElementById("pass").value;
-        if( Username == "username" && password == "123456")
-        {
-            alert("login successful");
-           
-        }
-        else{
-            alert("invalid username or password");
-            return
-        }
-    }
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var username = document.getElementById("User").value;
+            var password = document.getElementById("pass").value;
+            if (username === "username" && password === "123456") {
+                alert("Login successful");
+                window.location.href = "index.html";
+            } else {
+                alert("Invalid username or password");
+            }
+        });
     </script>
 </body>
 </html>
