@@ -234,7 +234,8 @@ nav a{
 center h1{
   font-size: 50px;
   border-bottom: 2px white solid ;
- width: 700px;
+  width: 700px;
+ color:"white";
 }
 @media screen and (max-width:768px){
   center h1{
